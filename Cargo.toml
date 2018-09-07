@@ -1,0 +1,21 @@
+[package]
+name = "evmplay"
+version = "0.0.1"
+authors = ["microdimen <microdimen@gmail.com>"]
+
+[lib]
+name = "evmplay"
+path = "src/evmplay.rs"
+
+[dependencies]
+ethcore = { path = "../parity-ethereum/ethcore" }
+ethcore-io = {path = "../parity-ethereum/util/io"}
+ethcore-transaction = {path = "../parity-ethereum/ethcore/transaction"}
+blooms-db = { path = "../parity-ethereum/util/blooms-db"}
+ethkey = {path = "../parity-ethereum/ethkey"}
+ethereum-types = "0.3.2"
+kvdb-rocksdb = { git = "https://github.com/paritytech/parity-common"}
+kvdb = { git = "https://github.com/paritytech/parity-common"}
+serde_json = "1.0.24"
+rustc-serialize = "0.3.24"
+ethabi = "5.1"
